@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Budget Calculator</title>
+
+		<!-- external CSS link -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+        <section class="main">
+            <section class="method">
+                <h1>Budget Calculator</h1>
+                <form>
+                    <label for="income">Monthly After Tax Income: </label>
+                    <input type="text" id="afterTaxIncome" name="income">
+                </form>
+               <h3>Choose Your Budgeting Method:</h3>
+                <section class="drop">
+                    <select id="dropDown" onchange="test()">
+                        <option value="default" selected="selected"> </option>
+                        <option value="fiftyThirtyTwenty" id="fiftyThirtyTwenty">50/30/20</option>
+                        <option value="seventyTwentyTen" id="seventyTwentyTen">70/20/10</option>
+                        <option value="thirtyTen" id="thirtyTen">30/30/30/10</option>
+                    </select>
+                </section>
+            </section>
+
+            <section class="boxes hidden" id="fiftyBudget">
+                <h2>50/30/20 Budget</h2>
+                <section class="breakdown">
+                    <h3>Needs</h3>
+                    <p>(50% of Income)</p>
+                    <h2 class="fifty"></h2>
+                </section>
+                <section class="breakdown">
+                    <h3>Wants</h3>
+                    <p>(30% of Income)</p>
+                    <h2 class="thirty"></h2>
+                </section>
+                <section class="breakdown">
+                    <h3>Savings & Debt Repayment</h3>
+                    <p>(20% of Income)</p>
+                    <h2 class="twenty"></h2>
+                </section>
+            </section>
+
+            <section class="boxes hidden" id="seventyBudget">
+                <h2>70/20/10 Budget</h2>
+                <section class="breakdown">
+                    <h3>Spending</h3>
+                    <p>(70% of Income)</p>
+                    <h2 class="seventy"></h2>
+                </section>
+                <section class="breakdown">
+                    <h3>Saving</h3>
+                    <p>(20% of Income)</p>
+                    <h2 class="twenty"></h2>
+                </section>
+                <section class="breakdown">
+                    <h3>Giving</h3>
+                    <p>(10% of Income)</p>
+                    <h2 class="ten"></h2>
+                </section>
+            </section>
+
+            <section class="boxes hidden" id="thirtyBudget">
+                <h2>30/30/30/10 Budget</h2>
+                <section class="breakdown">
+                    <h3>Housing</h3>
+                    <p>(30% of Income)</p>
+                    <h2 class="thirty"></h2>
+                </section>
+                <section class="breakdown">
+                    <h3>Necessary Expenses</h3>
+                    <p>(30% of Income)</p>
+                    <h2 class="thirty"></h2>
+                </section>
+                <section class="breakdown">
+                    <h3>Financial Goals</h3>
+                    <p>(30% of Income)</p>
+                    <h2 class="thirty"></h2>
+                </section>
+                <section class="breakdown">
+                    <h3>Wants</h3>
+                    <p>(10% of Income)</p>
+                    <h2 class="ten"></h2>
+                </section>
+            </section>
+        </section>
+
+		<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>
