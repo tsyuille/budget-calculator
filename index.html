@@ -21,16 +21,15 @@
                 </form>
                <h3>Choose Your Budgeting Method:</h3>
                 <section class="drop">
-                    <select id="dropDown" onchange="test()">
-                        <option value="default" selected="selected"> </option>
-                        <option value="fiftyThirtyTwenty" id="fiftyThirtyTwenty">50/30/20</option>
+                    <select id="dropDown" onchange="changeEvent()">
+                        <option value="fiftyThirtyTwenty" id="fiftyThirtyTwenty" selected>50/30/20</option>
                         <option value="seventyTwentyTen" id="seventyTwentyTen">70/20/10</option>
                         <option value="thirtyTen" id="thirtyTen">30/30/30/10</option>
                     </select>
                 </section>
             </section>
 
-            <section class="boxes hidden" id="fiftyBudget">
+            <section class="boxes" id="fiftyBudget">
                 <h2>50/30/20 Budget</h2>
                 <section class="breakdown">
                     <h3>Needs</h3>
@@ -49,7 +48,7 @@
                 </section>
             </section>
 
-            <section class="boxes hidden" id="seventyBudget">
+            <section class="boxes" id="seventyBudget">
                 <h2>70/20/10 Budget</h2>
                 <section class="breakdown">
                     <h3>Spending</h3>
@@ -68,7 +67,7 @@
                 </section>
             </section>
 
-            <section class="boxes hidden" id="thirtyBudget">
+            <section class="boxes" id="thirtyBudget">
                 <h2>30/30/30/10 Budget</h2>
                 <section class="breakdown">
                     <h3>Housing</h3>

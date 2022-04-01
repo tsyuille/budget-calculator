@@ -3,25 +3,22 @@ const seventyBudget = document.querySelector('#seventyBudget')
 const thirtyBudget = document.querySelector('#thirtyBudget')
 
 function changeEvent() {
-    const dropDown = document.getElementById("dropDown").value;
+    const dropDown = document.getElementById("dropDown")
 
-    if(dropDown === "default"){
-        fiftyBudget.classList.add('hidden')
-	    seventyBudget.classList.add('hidden')
-	    thirtyBudget.classList.add('hidden')  
-     } /*else {
-       document.getElementById('wrapperOne').style.display = 'none';
-        document.getElementById('wrapperTwo').style.display = 'none';
-        document.getElementById('wrapperThree').style.display = 'none';
-        if(dropDown === "one"){
-           document.getElementById('wrapperOne').style.display = 'block';      
-        } else if(dropDown === "two"){
-           document.getElementById('wrapperTwo').style.display = 'block';
-        } else if(dropDown === "three"){
-           document.getElementById('wrapperThree').style.display = 'block';
-        }
-     }*/
-  }
+    if (dropDown.value === "fiftyThirtyTwenty"){
+        fiftyBudget.style.display = 'block'
+	    seventyBudget.style.display = 'none'
+	    thirtyBudget.style.display = 'none'
+     } else if (dropDown.value === "seventyTwentyTen"){
+        fiftyBudget.style.display = 'none'
+	    seventyBudget.style.display = 'block'
+	    thirtyBudget.style.display = 'none'
+     } else if (dropDown.value === "thirtyTen"){
+        fiftyBudget.style.display = 'none'
+	    seventyBudget.style.display = 'none'
+	    thirtyBudget.style.display = 'block'
+    }
+}
 
 let total = 0
 
@@ -77,4 +74,3 @@ function seventyPercent() {
         seventy[i].innerText = "$" + total
     } 
 }
-
