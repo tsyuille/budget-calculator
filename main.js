@@ -6,17 +6,17 @@ function changeEvent() {
     const dropDown = document.getElementById("dropDown")
 
     if (dropDown.value === "fiftyThirtyTwenty"){
-        fiftyBudget.style.display = 'block'
+        fiftyBudget.style.display = 'flex'
 	    seventyBudget.style.display = 'none'
 	    thirtyBudget.style.display = 'none'
      } else if (dropDown.value === "seventyTwentyTen"){
         fiftyBudget.style.display = 'none'
-	    seventyBudget.style.display = 'block'
+	    seventyBudget.style.display = 'flex'
 	    thirtyBudget.style.display = 'none'
      } else if (dropDown.value === "thirtyTen"){
         fiftyBudget.style.display = 'none'
 	    seventyBudget.style.display = 'none'
-	    thirtyBudget.style.display = 'block'
+	    thirtyBudget.style.display = 'flex'
     }
 }
 
@@ -35,7 +35,7 @@ function fiftyPercent() {
     const fifty = document.querySelectorAll('.fifty')
     for(let i = 0; i < fifty.length; i++) {
         total = income * .5
-        fifty[i].innerText = "$" + total
+        fifty[i].innerText = "$" + total.toFixed(2)
     } 
 }
 
@@ -44,7 +44,7 @@ function thirtyPercent() {
     const thirty = document.querySelectorAll('.thirty')
     for(let i = 0; i < thirty.length; i++) {
         total = income * .3
-        thirty[i].innerText = "$" + total
+        thirty[i].innerText = "$" + total.toFixed(2)
     } 
 }
 
@@ -53,7 +53,7 @@ function twentyPercent() {
     const twenty = document.querySelectorAll('.twenty')
     for(let i = 0; i < twenty.length; i++) {
         total = income * .2
-        twenty[i].innerText = "$" + total
+        twenty[i].innerText = "$" + total.toFixed(2)
     } 
 }
 
@@ -62,7 +62,7 @@ function tenPercent() {
     const ten = document.querySelectorAll('.ten')
     for(let i = 0; i < ten.length; i++) {
         total = income * .1
-        ten[i].innerText = "$" + total
+        ten[i].innerText = "$" + total.toFixed(2)
     } 
 }
 
@@ -71,6 +71,6 @@ function seventyPercent() {
     const seventy = document.querySelectorAll('.seventy')
     for(let i = 0; i < seventy.length; i++) {
         total = income * .7
-        seventy[i].innerText = "$" + total
+        seventy[i].innerText = "$" + total.toFixed(2)
     } 
 }
