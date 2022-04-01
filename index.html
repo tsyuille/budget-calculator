@@ -15,10 +15,6 @@
         <section class="main">
             <section class="method">
                 <h1>Budget Calculator</h1>
-                <form>
-                    <label for="income">Monthly After Tax Income: </label>
-                    <input type="text" id="afterTaxIncome" name="income">
-                </form>
                <h3>Choose Your Budgeting Method:</h3>
                 <section class="drop">
                     <select id="dropDown" onchange="changeEvent()">
@@ -27,6 +23,10 @@
                         <option value="thirtyTen" id="thirtyTen">30/30/30/10</option>
                     </select>
                 </section>
+                <form>
+                    <label for="income">Monthly After Tax Income: </label>
+                    <input type="text" id="afterTaxIncome" name="income">
+                </form>
             </section>
 
             <section class="boxes" id="fiftyBudget">
